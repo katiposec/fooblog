@@ -1,0 +1,14 @@
+﻿.intro {
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background: url('../img/city_head.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 144px 0;
+    text-shadow: 1px 2px 0 #3a3a3a;
+}
+
+.align-bottom {
+    display: table-cell;
+    vertical-align: bottom;
+}
