@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" ValidateRequest="false" CodeBehind="view_post.aspx.cs" Inherits="FooBlog.view_post" %>
+
 <%@ Import Namespace="FooBlog" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -42,6 +43,12 @@
             <div class="input-field col s12 center-align">
                 <asp:TextBox ID="commentText" MaxLength="1024" runat="server"></asp:TextBox>
                 <label for="mainContent_commentText">Leave a Comment</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 center-align">
+                <input id="subCheck" type="checkbox" />
+                <label for="subCheck">Subscribe</label>
             </div>
         </div>
         <div class="row">

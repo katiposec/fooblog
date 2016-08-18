@@ -38,7 +38,15 @@ namespace FooBlog
 
                     var da = new NpgsqlDataAdapter(cmd);
                     var ds = new DataSet();
-                    da.Fill(ds);
+
+                    try
+                    {
+                        da.Fill(ds);
+                    }
+                    catch (Exception ex)
+                    {
+                        FooLogging.WriteLog(ex.ToString());
+                    }
 
                     if (ds.Tables[0].Rows.Count == 0)
                     {
@@ -70,7 +78,15 @@ namespace FooBlog
 
                     var da = new NpgsqlDataAdapter(cmd);
                     var ds = new DataSet();
-                    da.Fill(ds);
+
+                    try
+                    {
+                        da.Fill(ds);
+                    }
+                    catch (Exception ex)
+                    {
+                        FooLogging.WriteLog(ex.ToString());
+                    }
 
                     if (ds.Tables[0].Rows.Count == 0)
                     {
